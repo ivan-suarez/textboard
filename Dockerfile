@@ -1,7 +1,6 @@
 FROM node:12
 #Create app directory
-WORKDIR /usr/src/js
-
+WORKDIR /home
 #Install app dependencies
 
 COPY package*.json ./
@@ -9,7 +8,8 @@ COPY package*.json ./
 RUN npm install
 
 #Bundle app source
-COPY . . 
+COPY . .
+RUN ls
 
-EXPOSE 8080
-CMD ["node", "app.js"]
+EXPOSE 3000 
+CMD ["npm", "run", "dev"]
