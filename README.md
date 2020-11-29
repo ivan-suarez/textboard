@@ -15,6 +15,16 @@ Ganache
 
 Metamask Browser Extension
 
+# Execution with Docker
+~~~
+docker build -t textboard .
+~~~
+
+~~~
+truffle run --name textboard -p 3000:3000 -d textboard
+~~~
+
+
 # Execution
 
 Run Ganache
