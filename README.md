@@ -15,6 +15,16 @@ Ganache
 
 Metamask Browser Extension
 
+# Execution with Docker
+~~~
+docker build -t textboard .
+~~~
+
+~~~
+docker run --name textboard -p 3000:3000 -d textboard
+~~~
+
+
 # Execution
 
 Run Ganache
@@ -30,8 +40,8 @@ Run node
 npm run dev
 ~~~
 
-Make sure you are logged in Metamask and are connected to the Ganache blockchain. Import one of the account from it.
+Make sure you are logged in Metamask and are connected to the Ganache blockchain. Import one of the accounts from it.
 
-When you make a post, Metamask will ask you if you want to comfirm the transaction. Accept it and refresh the page, you will see your new post
+When you make a post, Metamask will ask you if you want to confirm the transaction. Accept it and refresh the page, you will see your new post.
 
 ![Alt text](screenshots/textboard2.png?raw=true)
