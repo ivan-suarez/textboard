@@ -2,5 +2,22 @@ body {
 	background-color: lightblue;
 }
 #content {
+	background-color: red;
+}
+#postResults {
 	background-color: white;
+}
+#posthead {
+	background-color: lightblue;
+	color: white;
+}
+#post {
+	background-color: white;
+	padding: 20px;
+}
+.postbody {
+	padding: 20px;
+}
+.container {
+	margin: auto;
 }
