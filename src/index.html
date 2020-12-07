@@ -8,10 +8,11 @@
     <title>Welcome to the textboard</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container" style="width: 650px;">
       <div class="row">
         <div class="col-lg-12">
           <h1 class="text-center">Posts</h1>
@@ -20,21 +21,13 @@
           <div id="loader">
             <p class="text-center">Loading...</p>
           </div>
-          <div id="content" style="display: none;">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Text</th>
-                  <th scope="col">Timestamp</th>
-                </tr>
-              </thead>
-              <tbody id="postResults">
-              </tbody>
-            </table>
-            <hr/>
+
+    <div class="container" style="width: 650px;">
+
+	    <div id="postResults">
+
+		</div>
             <p id="accountAddress" class="text-center"></p>
-          </div>
 	
 	  <form onSubmit="App.post(); return false;">
 	  <input type="text" id="postText"><br>

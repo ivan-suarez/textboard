@@ -62,7 +62,8 @@ App = {
           var date= post[2];
 
           // Render candidate Result
-          var postTemplate= "<tr><th>" + id + "</th><td>" + text+ "</td><td>" + date+ "</td></tr>";
+         // var postTemplate= "<tr><th>" + id + "</th><td>" + text+ "</td><td>" + date+ "</td></tr>";
+	var postTemplate= "<div id=\"post\"><div id=\"posthead\">"+id+" Anonymous: "+date+"</div><div class=\"postbody\">"+text+"</div></div>";
         // var postTemplate = "<p>sketit"+id+";"+text+";"+date+"</p>"; 
 	 postResults.append(postTemplate);
         });
