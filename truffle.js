@@ -1,4 +1,5 @@
-const HDWalletProvider = require("truffle-hdwallet-provider");
+require("dotenv").config();
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -12,7 +13,7 @@ module.exports = {
 	  mainnet: {
       provider: function() {
         return new HDWalletProvider(
-          process.env.MNEMONIC,
+          process.env.PRIVATE_KEY,
           `https://mainnet.infura.io/${process.env.INFURA_API_KEY}`
         )
       },
@@ -25,7 +26,7 @@ module.exports = {
 	  kovan: {
       provider: function() {
         return new HDWalletProvider(
-          process.env.MNEMONIC,
+          process.env.PRIVATE_KEY,
           `https://kovan.infura.io/${process.env.INFURA_API_KEY}`
         )
       },
