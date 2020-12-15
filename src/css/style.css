@@ -1,5 +1,5 @@
 body {
-	background-color: lightblue;
+	background-color: #E9C49E;
 }
 #content {
 	background-color: red;
@@ -8,7 +8,7 @@ body {
 	background-color: white;
 }
 #posthead {
-	background-color: lightblue;
+	background-color: #eee6cc;
 	color: white;
 }
 #post {
